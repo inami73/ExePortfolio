@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 
+        レスポンシブの設定
+        ・viewportの設定
+     -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- このサイトは何か　説明する場所 -->
+    <meta name="description" content="松井ふゆこの自己紹介">
+    <!-- タイトルの設定 -->
+    <title>PORTFOLIO</title>
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        headerタグの作成
+        ・homeボタンの配置
+        ・aboutボタンの配置
+        ・projectボタン配置
+     -->
+    <header>
+        <ul class="header-icon">
+            <li>
+                <a href="">
+                    <img src="img/home.png" alt="homeアイコン">
+                    <p>Home</p>
+                    <hr style="border:none;border-top:dashed 1px #626266;height:2px;color:#FFFFFF;width:30px;">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/about.png" alt="aboutアイコン">
+                    <p>About</p>
+                    <hr style="border:none;border-top:dashed 1px #626266;height:2px;color:#FFFFFF;width:30px;">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="img/projects.png" alt="projectsアイコン">
+                    <p>Projects</p>
+                    <hr style="border:none;border-top:dashed 1px #626266;height:2px;color:#FFFFFF;width:50px;">
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- 
+        mainタグの作成
+        ・profile用とabout用とproject用を作成する
+     -->
+    <div class="block-main">
+        <!-- 
+            profileの箱
+        -->
+        <div class="box-profile">
+            <div class="myname">
+                <h1>Fuyuko</h1>
+                <h1>Matsui</h1>
+                <h2>ふゆこ松井</h2>
+                <h2>Web Application Developer</h2>
+            </div>
+            <img src="img/woman.png" alt="自分の写真">
+        </div>
+
+        <!-- 
+            aboutの箱
+        -->
+        <div class="box-about">            
+            <div class="item-list">
+                <h2>About</h2>
+                <div class="under-next">
+                    <span>・・・・・・・・・・</span>
+                    <img src="img/pass.png" alt="">
+                    <span>・・・・・・・・・・</span>
+                </div>
+                <p>HTML / CSS / JavaScript / React JS / Redux / Python / Django / ExpressJS / AWS(basic) / Docker(basic)</p>
+                <p>ここに自己紹介を書きます。ここに自己紹介を書きます。ここに自己紹介を書きます。ここに自己紹介を書きます。ここに自己紹介を書きます。ここに自己紹介を書きます。</p>
+                <p>support@techis.com</p>
+            </div>
+                   
+            <ul class="icon-list">
+                <li>
+                    <a href="">
+                        <img src="img/github_white_logo.png" alt="Githubアイコン">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/in.png" alt="Inアイコン">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
