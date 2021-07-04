@@ -1,7 +1,6 @@
 /* * {
     outline: 1px solid red;
 } */
-
 /* 
 / 画面のスタイルシート
 */
@@ -9,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: #626266;
     margin-top: 5px;
 }
 
@@ -94,13 +93,21 @@
     padding-bottom: 30px;
 }
 
-.item-list {
-    max-width: 590px;
-    margin: 0 auto;
-    width: 100%;
+.box-about .under-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 5px;
 }
 
-.item-list h2 {
+.item-list {
+    /* max-width: 590px; */
+    /* margin: 0 auto; */
+    /* width: 100%; */
+}
+
+.box-about h2 {
     font-size: 30px;
     margin: 0;
     padding: 40px 0 0 0;
@@ -134,4 +141,86 @@
 
 .icon-list li:last-child {
     margin-right: 0;
+}
+
+/* 
+* [projects]のスタイルシート
+*/
+.box-projects {
+    text-align: center;
+}
+
+.box-projects .item-list {
+}
+
+.box-projects .item-list h2 {
+    font-size: 30px;
+    margin: 0;
+    padding: 40px 0 0 0;
+    color: #ff3333;
+    font-family: -webkit-pictograph;
+}
+
+.clone-list {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    margin: 50px auto;
+    padding: 0;
+}
+
+.clone-list b {
+    font-weight: normal;
+    font-size: 25px;
+    font-family: -webkit-pictograph;
+    color: #626266;
+    display: block;
+    margin: 20px 5px;
+}
+
+.clone-list hr {
+    padding: 10px;
+}
+
+.clone-list p {
+    margin: 0;
+    color: #626266;
+}
+
+.clone-list .test-account {
+    margin: 30px;
+}
+
+.clone-list ul {
+    margin: 0 auto;
+}
+
+.clone-list li {
+    display: block;
+    width: 100%;
+}
+
+.clone-list li:last-child {
+}
+
+.clone-list li img {
+    border: 1px solid #ff3333;
+    padding: 30px;
+}
+
+.clone-list li .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clone-list li .link a {
+    background-color: #ff3333;
+    padding: 5px 20px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: -webkit-body;
 }
