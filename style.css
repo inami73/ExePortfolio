@@ -2,7 +2,7 @@
     outline: 1px solid red;
 } */
 /* 
-/ 画面のスタイルシート
+* 画面のスタイルシート
 */
 .under-next {
     display: flex;
@@ -223,4 +223,66 @@
     text-decoration: none;
     color: white;
     font-family: -webkit-body;
+}
+
+/* 
+* [contact]のスタイルシート
+*/
+.box-contact {
+    text-align: center;
+}
+
+.box-contact h2 {
+    font-size: 30px;
+    margin: 0;
+    padding: 40px 0 0 0;
+    color: #626266;
+    font-family: -webkit-pictograph;
+}
+
+.box-contact h2 span {
+    font-size: 30px;
+    color: #ff3333;
+}
+
+.contact-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.contact-list li {
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px 50px;
+    background-color: #eeeeee;
+    border-bottom: medium solid #ff3333;
+}
+
+.contact-list li p {
+    color: #626266;
+}
+
+.contact-list .email-last {
+    color: #ff3333;
+    margin-bottom: 0;
+}
+
+.email-area hr {
+    margin-top: 0;
+}
+
+/* 
+* [footer]のスタイルシート
+*/
+.block-footer p {
+    clear: both;
+    text-align: center;
+    font-size: 15px;
+    margin: 100px 0 0;
+    padding: 30px;
+    background-color: #eeeeee;
+    color: #626266;
 }
