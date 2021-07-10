@@ -4,6 +4,11 @@
 /* 
 * 画面のスタイルシート
 */
+body {
+    margin: 0;
+    min-width: 1076px;
+}
+
 .under-next {
     display: flex;
     justify-content: center;
@@ -102,9 +107,9 @@
 }
 
 .item-list {
-    /* max-width: 590px; */
-    /* margin: 0 auto; */
-    /* width: 100%; */
+    max-width: 590px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .box-about h2 {
@@ -117,9 +122,6 @@
 
 .item-list span {
     font-size: 5px;
-}
-
-.item-list img {
 }
 
 .item-list p {
@@ -150,9 +152,6 @@
     text-align: center;
 }
 
-.box-projects .item-list {
-}
-
 .box-projects .item-list h2 {
     font-size: 30px;
     margin: 0;
@@ -164,11 +163,12 @@
 .clone-list {
     display: flex;
     list-style: none;
-    width: 100%;
-    text-align: center;
+    /* width: 100%; */
+    /* text-align: center; */
     overflow: hidden;
     margin: 50px auto;
     padding: 0;
+    justify-content: center;
 }
 
 .clone-list b {
@@ -198,8 +198,7 @@
 }
 
 .clone-list li {
-    display: block;
-    width: 100%;
+    /* display: block; */
 }
 
 .clone-list li:last-child {
@@ -207,7 +206,9 @@
 
 .clone-list li img {
     border: 1px solid #ff3333;
-    padding: 30px;
+    padding: 0;
+    margin: 0 50px;
+    max-width: 80%;
 }
 
 .clone-list li .link {
@@ -285,4 +286,140 @@
     padding: 30px;
     background-color: #eeeeee;
     color: #626266;
+}
+
+/* 
+* タブレット用のスタイルシート
+*/
+/* @media  screen and (max-width: 767px) {
+    
+} */
+/* 
+* スマホ用のスタイルシート
+*/
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 100%;
+    }
+
+    .under-next {
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+
+    .under-next img {
+        width: 5%;
+    }
+
+    /* 
+    * [header]のスタイルシート
+    */
+    .header-icon {
+        justify-content: flex-end;
+        border-bottom: thin solid #ff3333;
+    }
+
+    .header-icon li:first-child {
+        margin-right: auto;
+    }
+
+    .header-icon p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .header-icon hr {
+        display: none;
+    }
+
+    /* 
+    * [profile]のスタイルシート
+    */
+    .box-profile {
+        display: block;
+    }
+
+    .box-profile img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .item-list {
+        max-width: 100%;
+    }
+
+    .myname {
+        text-align: center;
+        margin: 0;
+    }
+
+    .myname h1 {
+        font-size: 90px;
+        margin: 0;
+        font-family: -webkit-pictograph;
+        color: #626266;
+    }
+
+    .myname h2 {
+        font-size: 25px;
+    }
+
+    /* 
+    * [about]のスタイルシート
+    */
+    .box-about h2 {
+        font-size: 20px;
+    }
+
+    .item-list span {
+        font-size: 2px;
+    }
+
+    .item-list p {
+        font-size: 8px;
+        margin: 20px 1px;
+    }
+
+    /* 
+    * [projects]のスタイルシート
+    */
+    .clone-list {
+        display: block;
+        list-style: none;
+        overflow: hidden;
+        margin: 50px auto;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .clone-list li {
+        margin-bottom: 50px;
+    }
+
+    .clone-list li img {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /* 
+    * [contact]のスタイルシート
+    */
+    .contact-list {
+        display: block;
+        list-style: none;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .contact-list li {
+        width: 280px;
+        margin: 20px auto;
+    }
+
+    /* 
+    * [footer]のスタイルシート
+    */
+    .block-footer p {
+        font-size: 10px;
+    }
 }
