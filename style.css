@@ -1,6 +1,14 @@
 /* * {
     outline: 1px solid red;
 } */
+
+/* リセットCSS */
+/* タグでリセットしたり、margin 0やpadding 0を指定する */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* 
 * 画面のスタイルシート
 */
@@ -28,6 +36,34 @@ body {
     align-items: baseline;
     border-bottom: medium solid #ff3333;
     margin-bottom: 0;
+}
+
+.header-icon a {
+    color: black;
+    text-decoration: none; /*アンダーバーをなくす*/
+    transition: opacity 500ms ease-out;
+}
+
+.header-icon a:hover {
+    opacity: 0.1;
+    position: relative;
+}
+
+.header-icon a:hover::after {
+    width: 100%;
+}
+
+.header-icon a::after {
+    content: "";
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-bottom: 1px solid black;
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    transition: width 500ms ease-out;
 }
 
 .header-icon li {
@@ -96,6 +132,8 @@ body {
     text-align: center;
     background-color: #ff3333;
     padding-bottom: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .box-about .under-next {
@@ -150,6 +188,8 @@ body {
 */
 .box-projects {
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .box-projects .item-list h2 {
@@ -206,9 +246,10 @@ body {
 
 .clone-list li img {
     border: 1px solid #ff3333;
-    padding: 0;
+    padding: 30px;
     margin: 0 50px;
     max-width: 80%;
+    box-sizing: border-box;
 }
 
 .clone-list li .link {
@@ -337,6 +378,7 @@ body {
     */
     .box-profile {
         display: block;
+        max-height: 100vh;
     }
 
     .box-profile img {
